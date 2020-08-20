@@ -1,0 +1,56 @@
+<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('slide-images')->toHtml();?>
+
+<script type="text/javascript">
+	require(['jquery', 'jquery/ui', 'slick'], function($) {
+	    $(document).ready(function() {
+	        $(".regular").slick({
+                dot: true,
+	            infinite: true,
+	            slidesToShow: 5,
+                slidesToScroll: 5,
+                arrows: true,
+                swipeToSlide: true,
+                responsive: [
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                        }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                        }
+                    },
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3,
+                        arrows: true,
+                        }
+                    },
+                    {
+                    breakpoint: 1440,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 5,
+                        arrows: true,
+                        }
+                    }
+                ]
+	        });
+	    });
+	});
+</script>

@@ -1,0 +1,8 @@
+<?php $questionData = [1, 2, 3]; ?>
+<div class="canberra-showroom">
+    <?php foreach ($questionData as $value): ?>
+        <div class="canberra-showroom__column">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('canberra-showroom-main'.$value.'')->toHtml();?>
+        </div>
+    <?php endforeach; ?>
+</div>

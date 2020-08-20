@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+
+
+
+
+        <referenceContainer name="page.wrapper">
+            <container name="full-columns" htmlTag="div" htmlClass="full-columns" after="main.content" before="footer">
+                <container name="full-main" label="Custom Main Content Container" htmlTag="div" htmlClass="column main"/>
+
+            <block class="Magento\Framework\View\Element\Template" name="home-page-carosel-block" template="Magento_Cms::home-page-carosel.phtml"  before="-"/>
+
+
+            
+            </container>
+
+        </referenceContainer>
+
+        <referenceContainer name="full-main">
+
+            <block class="Magento\Framework\View\Element\Template" name="banner-block" template="Magento_Cms::banner.phtml"  before="-"/>
+
+
+            <container name="slide_image" label="Services Content Container" htmlTag="div" htmlClass="slide-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="aht.content.slide" template="Magento_Cms::slide_image.phtml" />
+            </container>
+
+            <container name="h1-lifestyle-blog-container" htmlTag="div" htmlClass="title__h1">
+                <block class="Magento\Cms\Block\Block" name="H1_Lifestyleblog" before="lifestyle_blog">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">h1-lifestyle-blog</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="lifestyle_blog" label="extensions Content Container" htmlTag="div" htmlClass="lifestyle-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="aht.content.lifestyle" template="Magento_Cms::lifestyle_blog.phtml" />
+            </container>
+
+            <container name="h1-burninglogtestimonials-container" htmlTag="div" htmlClass="title__h1">
+                <block class="Magento\Cms\Block\Block" name="H1-Burninglogtestimonials" before="burninglog_main">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">h1-burninglogtestimonials</argument>
+                    </arguments>
+                </block>
+            </container>
+            <container name="burninglog_main" label="Blog Content Container" htmlTag="div" htmlClass="burninglog-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="aht.content.burninglog" template="Magento_Cms::burninglog_main.phtml" />
+            </container>
+            <container name="pagebottom--container__button" htmlTag="div" htmlClass="page--bottom__button" after="burninglog_main">
+                <block class="Magento\Cms\Block\Block" name="Page-Bottom-Button">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">page-bottom-button</argument>
+                    </arguments>
+                </block>
+            </container>
+            <!-- <container name="newsletter" label="Newsletter Content Container" htmlTag="div" htmlClass="newsletter-block" />
+            <container name="contact" label="Contact Content Container" htmlTag="div" htmlClass="contact-block" /> -->
+        </referenceContainer>
+    </body>
+</page>

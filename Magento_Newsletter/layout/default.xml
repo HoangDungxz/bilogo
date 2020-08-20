@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="form.subscribe">
+            <container name="social_footer_container" label="Social Footer Container" htmlTag="div" htmlClass="social-div" before="-"/>
+        </referenceBlock>
+    </body>
+</page>

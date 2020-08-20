@@ -1,0 +1,11 @@
+<?php $questionData = [1, 2, 3]; ?>
+<div class="product--blogs">
+    <?php foreach ($questionData as $value): ?>
+        <div class="product--blogs__column">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('product-img-blog')->toHtml();?>
+            <div>
+                <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('product-content-blog')->toHtml();?>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>

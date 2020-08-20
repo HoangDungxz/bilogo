@@ -1,0 +1,89 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+// <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+& when (@media-common = true) {
+    // roboto
+    .lib-font-face(
+        @family-name: @font-family-name__base__roboto,
+        @font-path: '@{baseDir}fonts/roboto/light/opensans-300',
+        @font-weight: 300,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__roboto,
+        @font-path: '@{baseDir}fonts/roboto/regular/Roboto-Regular',
+        @font-weight: 400,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__roboto,
+        @font-path: '@{baseDir}fonts/roboto/semibold/Roboto-BoldItalic',
+        @font-weight: 600,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__roboto,
+        @font-path: '@{baseDir}fonts/lora/bold/Roboto-Bold',
+        @font-weight: 700,
+        @font-style: normal
+    );
+
+    // lora
+    .lib-font-face(
+        @family-name: @font-family-name__base__lora,
+        @font-path: '@{baseDir}fonts/lora/bold/Lora-Bold',
+        @font-weight: 700,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__lora,
+        @font-path: '@{baseDir}fonts/lora/light/Lora-BoldItalic',
+        @font-weight: 300,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__lora,
+        @font-path: '@{baseDir}fonts/lora/regular/Lora-Regular',
+        @font-weight: 400,
+        @font-style: normal
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base__lora,
+        @font-path: '@{baseDir}fonts/lora/semibold/Lora-SemiBold',
+        @font-weight: 600,
+        @font-style: normal
+    );
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+// .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+//     h1 {
+//         .lib-css(font-size, @h1__font-size-desktop);
+//         .lib-css(margin-bottom, @h1__margin-bottom__desktop);
+//     }
+// }
+
+//
+//  Common
+//  _____________________________________________
+
+// & when (@media-common = true) {
+//     .items {
+//         .lib-list-reset-styles();
+//     }
+// }

@@ -1,0 +1,24 @@
+<div>
+<?php
+    echo $block->getLayout()
+
+               ->createBlock('Magento\Cms\Block\Block')
+
+               ->setBlockId('header-top-left')
+
+               ->toHtml();
+
+?>
+</div>
+<div>	
+<?php
+    echo $block->getLayout()
+
+               ->createBlock('Magento\Cms\Block\Block')
+
+               ->setBlockId('header-top-center')
+
+               ->toHtml();
+
+?>
+</div>

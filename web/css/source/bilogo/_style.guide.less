@@ -1,0 +1,61 @@
+@import '_variables.less';
+@import '_typography.less';
+@import '_colors.less';
+//element
+h1 { font-size: 32px; color: @color-2222222; font-family: @font-family__base__lora; }
+h2 { font-size: 24px; color: @color-2222222; font-family: @font-family__base__lora; }
+h3 { font-size: 18px; color: @color-2222222; font-family: @font-family__base__lora; }
+h4 { font-size: 15px; color: @color-2222222; font-family: @font-family__base__roboto; }
+p { font-size: 13px; color: @color-2222222; font-family: @font-family__base__roboto; }
+//alert
+.alert-success { .mixmin-aler(@color-22b725); }
+.alert-error { .mixmin-aler(@color-f44336); }
+.mixmin-aler (@color) {
+    border: 1px solid @color;
+    background-color: #ffffff;
+    color: @color;
+    margin-bottom: 15px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 13px;
+    font-family: @font-family__base__roboto;
+    font-weight: 700;
+}
+//bottom
+.bottom__addtocart{
+    .mixmin-bottom-big (@color: #ffffff, @height: 40px, @width:180px, @background: @color-22b725, @font-size: 13px);
+}
+.bottom__standard{
+    .mixmin-bottom-small (@color: #3b3b3e, @height: 40px, @width:140px, @background: #ffffff, @font-size: 13px,@boder-hover:#3b3b3e);
+}
+.mixmin-bottom (@color, @height, @width, @background, @font-size) {
+    height: @height;
+    width: @width;
+    background-color: @background;
+    font-size: @font-size;
+    color: @color;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 0px;
+    font-family: @font-family__base__roboto;
+}
+.mixmin-bottom-big (@color, @height, @width, @background, @font-size) {
+    .mixmin-bottom (@color: @color, @height: @height, @width: @width, @background: @background, @font-size: @font-size);
+}
+.mixmin-bottom-small (@color, @height, @width, @background, @font-size, @boder-hover) {
+    .mixmin-bottom (@color: @color, @height: @height, @width: @width, @background: @background, @font-size: @font-size);
+    border: 2px solid @boder-hover;
+}
+.mixmin-bottom-hover (@background-hover, @boder-hover) {
+    background-color: @background-hover;
+    border: 2px solid @boder-hover;
+}
+//a
+.custom-a{
+    font-family: @font-family__base__roboto;
+    font-size: 13px;
+    color: #111111;
+    &:hover{color: #a2a2a2;}
+}

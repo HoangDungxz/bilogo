@@ -1,0 +1,35 @@
+<div class="banner">
+	<div class="banner-line banner-top-line">
+		<?php for($i = 1;$i <=2 ;$i++): ?>
+			<div>
+				<?php echo 
+				$block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-top-line-'.$i.'')->toHtml();?>
+				<button>shop now <i class="fas fa-chevron-right"></i></button>
+			</div>
+		<?php endfor; ?>
+	</div>
+	<div class="banner-resson-buy">
+		<?php echo 
+		$block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-resson-to-buy')->toHtml();?>
+	</div>
+	<div class="banner-line banner-center-line">
+		<?php for($i = 1;$i <=3 ;$i++): ?>
+			<div>
+				<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-center-img-'.$i.'')->toHtml();?>
+				<div class="content">
+					<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-center-text-'.$i.'')->toHtml();?>
+					<button>shop now <i class="fas fa-chevron-right"></i></button>
+				</div>
+			</div>
+		<?php endfor; ?>   
+	</div>
+	<div class="banner-line banner-bottom">
+		<div>
+			<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-bottom-1')->toHtml();?>
+			<button>shop now <i class="fas fa-chevron-right"></i></button>
+		</div>			
+		<div>
+			<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-bottom-2')->toHtml();?>
+		</div>
+	</div>
+</div>

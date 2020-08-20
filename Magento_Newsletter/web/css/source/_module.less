@@ -1,0 +1,82 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    //  Newsletter subscription
+    .block.newsletter {
+      margin: 0;
+      width: 280px;
+      .title {
+        display: block;
+      }
+
+      .field .control:after {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 16px;
+        line-height: 80px;
+        color: #575757;
+        content: '\e608';
+        font-family: 'luma-icons';
+        margin: 0 0 0 -40px;
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: normal;
+        overflow: hidden;
+        speak: none;
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+    }
+  
+      .content {
+        margin-bottom: 15px;
+        button { display: none; }
+      }
+
+      span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #333333;
+        font-weight: 400;
+        font-family: @font-family__base__roboto;
+      }
+
+      input {
+        position: relative;
+        margin-top: 20px;
+        padding-left: 16px;
+        font-family : @font-family__base__roboto;
+        height      : 40px;
+        color       : #797979;
+        font-size   : 13px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 30px;
+        color: #333333;
+        margin-right: 30px;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+//
+//  Mobile
+//  _____________________________________________
+  
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .block.newsletter {
+      width: 100%;
+      text-align: center;
+  }
+}
+  // Large (>= 1440px)
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__xl) {
+  //
+}

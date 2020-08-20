@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Divante/rapid
+ * @author Kacper Chara <kchara@divante.pl>
+ * @copyright 2017 Divante Sp. z o.o.
+ * @license See LICENSE_DIVANTE.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Framework\View\Element\Template" name="myPromoo" template="Magento_Catalog::blog/_product_buttongroup.phtml" after="-"/>
+        </referenceContainer>
+
+        <referenceBlock name="product.info.details">               
+            <referenceBlock name="product.info.description">
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">DESCRIPTION</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceBlock>
+
+        <referenceBlock name="product.info.review" remove="true" />
+        <referenceBlock name="product.info.extrahint" remove="true"/>
+        <referenceBlock name="product.info.additional" remove="true"/>
+        
+    </body>
+</page>

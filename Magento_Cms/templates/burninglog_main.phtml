@@ -1,0 +1,8 @@
+<?php $questionData = [1, 2, 3, 4]; ?>
+<div class="burninglogtestimonials">
+    <?php foreach ($questionData as $value): ?>
+        <div class="burninglogtestimonials__column">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('item-burninglogtestimonials')->toHtml();?>
+        </div>
+    <?php endforeach; ?>
+</div>
