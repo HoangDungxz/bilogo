@@ -6,7 +6,7 @@
        + admin -> content ->block -> edit block -> insert tat ca anh -> save
   
 # cai dat module best seller va newarrival
-  b1: clone git ve app/code : git lone https://github.com/HoGib98/module-best-seller.git
+  b1: clone git ve app/code : git lone https://github.com/HoGib98/BestSeller.git
   b2: chay combo lenh : bin/magento c:c -> bin/magento setup:upgrade -> bin/magento s:s:d -f
   
 # cai dat thanh Magento_LayeredNavigation
