@@ -1,6 +1,6 @@
 # cai dat nhanh voi sql
   b1: Tao moi magento 
-  b2: vao sql con SQl thuc hien lenh sau: https://drive.google.com/file/d/1bXpSq_MbAB28qnF8GGcn8UBlAFuX-B_j/view?usp=sharing
+  b2: vao sql con SQl thuc hien lenh sau: https://drive.google.com/file/d/1auqPPlNlOoM9mS22cj_WfPm564ELouoL/view?usp=sharing
   b3 : tai link anh https://drive.google.com/file/d/1QNbZIjWS9OWlR3SNcAqs6zB1VlVkXZIy/view?usp=sharing 
   b4 : insert anh vao block trong admin
        + admin -> content ->block -> edit block -> insert tat ca anh -> save
