@@ -17,10 +17,9 @@
 					<referenceBlock name="my-account-link" remove="true" />
 					<referenceBlock name="register-link" remove="true" />
 					<referenceBlock name="wish-list-link" remove="true" />
+					<referenceBlock name="header" remove="true" />
 
-					<referenceBlock name="top.links">
-						<block class="Magento\Framework\View\Element\Template" name="dropdown_mc" after="-" template="Magento_Theme::header_top_links.phtml"/>
-					</referenceBlock>
+						 <block class="Magento\Framework\View\Element\Template" name="header.top.links" before="-" template="Magento_Theme::header_top_links.phtml"/>
 				</referenceContainer>
 
 			</referenceContainer>

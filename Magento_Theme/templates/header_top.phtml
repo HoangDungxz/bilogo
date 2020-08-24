@@ -1,24 +1,36 @@
-<div>
-<?php
-    echo $block->getLayout()
+<div class="header-top-destop">
+	<?php
+	echo $block->getLayout()
 
-               ->createBlock('Magento\Cms\Block\Block')
+	->createBlock('Magento\Cms\Block\Block')
 
-               ->setBlockId('header-top-left')
+	->setBlockId('header-top-left')
 
-               ->toHtml();
+	->toHtml();
 
-?>
+	?>
 </div>
-<div>	
-<?php
-    echo $block->getLayout()
+<div class="header-top-destop">	
+	<?php
+	echo $block->getLayout()
 
-               ->createBlock('Magento\Cms\Block\Block')
+	->createBlock('Magento\Cms\Block\Block')
 
-               ->setBlockId('header-top-center')
+	->setBlockId('header-top-center')
 
-               ->toHtml();
+	->toHtml();
 
-?>
+	?>
+</div>
+
+<div class="header-top-mobile">
+	<?php
+	echo $block->getLayout()
+
+	->createBlock('Magento\Cms\Block\Block')
+
+	->setBlockId('header-top-mobile')
+
+	->toHtml();
+	?>
 </div>

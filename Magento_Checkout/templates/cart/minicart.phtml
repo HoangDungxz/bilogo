@@ -11,10 +11,11 @@
     <a class="action showcart" href="<?= $block->escapeUrl($block->getShoppingCartUrl()) ?>"
        data-bind="scope: 'minicart_content'">
         <span class="text"><?= $block->escapeHtml(__('My Cart')) ?></span>
-        <span>Cart (</span>
         <span class="counter qty empty"
               data-bind="css: { empty: !!getCartParam('summary_count') == false && !isLoading() }, blockLoader: isLoading">
+        <span>Cart (</span>
             <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+        <span> )</span>
             <span class="counter-label">
             <!-- ko if: getCartParam('summary_count') -->
                 <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
@@ -22,7 +23,6 @@
             <!-- /ko -->
             </span>
         </span>
-        <span> )</span>
     </a>
     <?php if ($block->getIsNeedToDisplaySideBar()) :?>
         <div class="block block-minicart"

@@ -1,1 +1,116 @@
-@import '_header.less';
+& when (@media-common = true) {
+	//header
+	.header-panel-wrapper-black{
+		background-color: @color-black;
+	}
+	.panel.wrapper{
+		p{
+			margin: 0;
+			color: @color-white;
+			span{
+				margin: 0 10px;
+			}
+		}
+		a{
+			color: @color-white;
+			margin-left: 15px;
+		}
+		.panel.header{
+			.list-top-links{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				li{
+					margin: 0;
+				}
+			}
+		}
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.header.links{
+			display: flex;
+			align-items: center;
+			li{
+				margin: 0;
+			}
+			.top-link-left{
+				display: flex;
+				align-items: center;
+			}
+		}
+		.authorization-link{
+			margin: 0;
+		}
+	}
+	.nav-sections{
+		background-color: @color-white;
+	}
+}
+
+
+  // Tablet (>= 768px)
+  .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  	.page-header{
+  		.panel.wrapper{
+  			border:none;
+  			background-color: @color-black;
+  		}
+  		.panel.header{
+  			margin: 0;
+  			display: flex;
+  			padding: 10px 0;
+  		}
+  		.header.panel>.header.links>li{
+  			margin: 0;
+  		} 
+  	}
+  	.header-top-mobile{
+  		display: none;
+  	}
+  }
+
+  @media only screen and (max-width: @screen__m) {
+  	.page-header .panel.wrapper{
+  		background-color: @color-black;
+  	}
+  	.header-top-mobile{
+  		width: 100%;	
+  		display: flex;
+  		justify-content: space-between;
+  		p{
+  			padding: 10px 20px;
+  			position: relative;
+  			&:first-child{
+  				&:before{
+  					-webkit-font-smoothing: antialiased;
+  					-moz-osx-font-smoothing: grayscale;
+  					content: "\e60a";
+  					font-family: 'luma-icons';
+  					padding: 0 15px;
+  				}
+  			}
+  			&:nth-child(2){
+  				&:before{
+  					font-family: 'Font Awesome 5 Free';
+  					font-weight: 900;
+  					content: "\f879";
+  					padding:  0 15px;
+  				}
+  			}
+  		}
+  	}
+  	.header-top-destop{
+  		display: none;
+
+  	}
+  	.panel.header{
+  		display: none;
+  	}
+  	.panel.wrapper.top-container{
+  		display: flex;
+
+  	}
+  }

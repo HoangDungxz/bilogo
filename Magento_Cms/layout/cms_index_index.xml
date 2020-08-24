@@ -2,14 +2,17 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="page.wrapper">
+            <container name="home.page.main.banner.section" htmlTag="section" htmlClass="home-page-main-banner-section" before="main.content">
+                <block class="Magento\Framework\View\Element\Template" name="home-page-carosel-block" template="Magento_Cms::home-page-carosel.phtml"  before="-"/>
+            </container>
             <container name="full-columns" htmlTag="div" htmlClass="full-columns" after="main.content" before="footer">
                 <container name="full-main" label="Custom Main Content Container" htmlTag="div" htmlClass="column main"/>
-                <block class="Magento\Framework\View\Element\Template" name="home-page-carosel-block" template="Magento_Cms::home-page-carosel.phtml"  before="-"/>
+        
             </container>
         </referenceContainer>
 
         <referenceContainer name="full-main">
-            <block class="Magento\Framework\View\Element\Template" name="banner-block" template="Magento_Cms::banner.phtml"  before="-"/>
+            <block class="Magento\Framework\View\Element\Template" name="banner-block" template="Magento_Cms::banner.phtml"  before="best-seller" />
 
             <container name="slide_image" label="Services Content Container" htmlTag="div" htmlClass="slide-container-block">
                 <block class="Magento\Framework\View\Element\Template" name="aht.content.slide" template="Magento_Cms::slide_image.phtml" />

@@ -1,0 +1,134 @@
+& when (@media-common = true) {
+
+}
+ // Tablet (>= 768px)
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {	
+ 	.ves-megamenu .owl-carousel > .owl-stage-outer{
+ 		padding-top: 0 !important;
+ 		padding-left: 0 !important;
+ 	}
+ 	.menu-ves-cus{
+ 		background: none;
+ 		ul{
+ 			display: flex;
+ 			align-items: baseline;
+ 			background: none;
+
+ 			li{
+ 				margin-left: 20px;
+ 				&.level0 > a{
+ 					font-size: 12px;
+ 					padding: 0;
+ 					margin: 0;
+ 					line-height: 14px;
+ 					font-family: @font-family__base__roboto;
+ 					padding: 15px 0;
+ 					&:hover{
+ 						background: #fff;
+ 						color: @color-red9;
+ 					}
+ 				}
+ 			}
+ 		}
+ 		.nav-item .level1{
+ 			&.nav-0,&.nav-1,&.nav-2{
+ 				min-height: 202px;
+
+ 			}
+ 		}
+
+ 		.owl-carousel-dropdownmenu{
+ 			padding: 20px;
+
+ 			.item{
+ 				position: relative;
+ 			}
+ 			p{
+ 				position: absolute;
+ 				color: @color-white;
+ 				font-size: 15px;
+ 				line-height: 20px;
+ 				font-weight: 500;
+ 				font-family: @font-family__base__roboto;
+ 				bottom: 20px;
+ 				left: 20px;
+ 			}
+ 			.owl-prev{
+ 				display: none;
+ 			}
+ 			.owl-next{
+ 				background: none;
+ 				color: @color-white;
+ 				position: absolute;
+ 				color: @color-white;
+ 				font-size: 15px;
+ 				bottom: 40px;
+ 				right: 40px;
+ 				border: none;
+ 				box-shadow: none;
+
+ 			}
+ 		}
+ 		.nav-anchor.subitems-group{
+ 			border-bottom: 2px solid @color-black;
+ 		}
+ 		.mega-col{
+ 			padding-right: 10px;
+ 			}.nav-anchor{
+ 				padding: 8px 0;
+ 			}
+ 		}
+ 		.menu-ves-cus{
+ 			background: none;
+
+ 			li{
+ 				margin-left: 20px;
+ 			}
+ 			.nav-anchor{
+ 				padding: 8px 0;
+ 			}
+ 		}
+
+ 		.navigation .level0 {
+ 			margin: 0;
+ 			margin-left: 20px;
+ 		}
+ 		.nav-sections-item-content.scroll-to-fixed-fixed{
+ 			background: @color-white;
+ 		}
+
+ 		.navigation .level0 .submenu a {
+ 			padding: 8px 0;
+ 		}
+ 		.ves-megamenu .dropdown-menu .subgroup.level1 > a {
+ 			padding: 8px 0;
+ 		}
+ 		.fas.fa-chevron-right{
+ 			color: @color-white;
+ 		}
+ 	}
+
+ // tablet
+
+ @media only screen and (max-width: @screen__m) {
+ 	.section-item-title.nav-sections-item-title{
+ 		width: 50%;
+ 		border: 1px solid @color-gray40;
+ 		padding-top:12px;
+ 		a{
+ 			text-transform: uppercase;
+ 			color: @color-gray40;
+ 			font-weight: 500;
+ 			font-size: 1.6rem;
+ 			line-height: 50px;
+ 			font-family: @font-family__base__roboto;
+
+ 		}
+ 		&.active{
+ 			a{
+ 				color: @color-black;
+ 			}
+ 		}
+ 	}
+
+ }
