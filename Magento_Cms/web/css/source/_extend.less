@@ -103,7 +103,7 @@
 		}
 	}
 	.banner{
-		margin-top: -130px;
+		margin-top: -420px;
 		&-line{
 			display: flex;
 			justify-content: space-between;
@@ -115,12 +115,20 @@
 			.banner-mixin;
 		}
 		&-resson-buy{
-			display: flex;
+			display: flex !important;
 			justify-content: space-between;
 			align-items: center;
 			background-color: @color-black;
 			min-height: 40px;
 			padding: 0 50px;
+			.slick-list.draggable{
+				width: 100%;
+				.slick-slide{
+					&>div{
+						text-align: center;
+					}
+				}
+			}
 			p{
 				font-size: 13px;
 				letter-spacing: 1px;
@@ -131,6 +139,7 @@
 				text-align: center;
 				text-transform: uppercase;
 				margin: 0;
+				width: auto !important;
 				position: relative;
 				&:after{
 					-webkit-font-smoothing: antialiased;
@@ -227,9 +236,6 @@
 			div {
 				width: 100% !important;
 			}
-		}
-		&-resson-buy{
-			display: block !important;
 		}
 	}
 }

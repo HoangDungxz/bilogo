@@ -8,10 +8,12 @@
 			</div>
 		<?php endfor; ?>
 	</div>
+
 	<div class="banner-resson-buy">
 		<?php echo 
 		$block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-resson-to-buy')->toHtml();?>
 	</div>
+
 	<div class="banner-line banner-center-line">
 		<?php for($i = 1;$i <= 3 ;$i++): ?>
 			<div>
@@ -34,3 +36,37 @@
 
 	</div>
 </div>
+
+
+
+
+<script type="text/javascript">
+	require(['jquery', 'jquery/ui', 'slick'], function($) {
+		$(document).ready(function() {
+			$(".banner-resson-buy").slick({
+				dot: false,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				arrows: false,
+				swipeToSlide: true,
+				responsive: [
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				}
+				]
+			});
+		});
+	});
+</script>
