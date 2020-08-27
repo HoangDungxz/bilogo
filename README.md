@@ -10,6 +10,16 @@
   b2: chay combo lenh : bin/magento c:c -> bin/magento setup:upgrade -> bin/magento s:s:d -f
   b3: insert : https://drive.google.com/file/d/1VFPVbYth_ABAzvXS4dYdOcEk7DLLo4FC/view?usp=sharing vao mysql
   
+# cai dat module megamenu
+  b1: dang nhap va tai module tu https://landofcoder.com/magento-2-mega-menu.html
+  gia nen dung phien ban vao AHT/biloge/
+  chay combo lenh : bin/magento c:c -> bin/magento setup:upgrade -> bin/magento s:s:d -f
+  b2: vao https://landofcoder.com/downloadable/customer/products/ dien domain va lay key
+  b3: vao magento->admin->VENUSTHEME->Licenses dien key
+  vao magento->admin->VENUSTHEME->import
+  import file https://drive.google.com/file/d/1mcB4RtkafjLeGB7nwjHsL7sy8SiSX5rw/view?usp=sharing
+  
+  
 # cai dat thanh Magento_LayeredNavigation
  b1 : vao admin -> catalog -> category -> Add Subcategory -> them sp vs thay doi desing -> 1 colum
   
