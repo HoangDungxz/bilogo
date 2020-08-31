@@ -199,10 +199,3 @@ define([
         }
     });
 });
-
-            // 'item': {
-            //     'qty': ':input.cart-item-qty',
-            //     'button': ':button.update-cart-item',
-            //     'qtyDecreasing': '.decreasing-qty',
-            //     'qtyIncreasing': '.increasing-qty'
-            // },
